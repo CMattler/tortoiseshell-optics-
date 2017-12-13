@@ -1,0 +1,73 @@
+/*General*/
+
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+.logo span,
+.nav span,
+h2,
+.img span,
+.logo-foot span {
+  font-size: 1rem;
+}
+
+body,
+header,
+.logo,
+.logo img,
+nav,
+.nav,
+main,
+.icons,
+.icon,
+.img,
+.img img,
+.icon span,
+.headlines,
+.headline,
+footer,
+.logo-foot,
+.logo-foot img {
+  display: flex;
+}
+
+header,
+.icons,
+.headlines,
+footer {
+  width: 960px;
+}
+
+body {
+  flex-direction: column;
+}
+
+/*Header*/
+
+
+
+/*Main Content*/
+
+
+
+/*Info Section*/
+
+
+
+/*Headline Section*/
+
+
+
+/*Footer*/
+
+
+
+/*Media Query*/
