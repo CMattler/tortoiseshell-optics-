@@ -1,8 +1,12 @@
 /*General*/
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.4rem;
   font-family: Helvetica;
 }
 
@@ -28,10 +32,9 @@ nav,
 .nav,
 .main,
 .main-heading,
+.icons-container,
 .icons,
 .icon,
-.img,
-.img img,
 .icon span,
 .headlines,
 .headline,
@@ -42,8 +45,7 @@ footer,
 }
 
 header,
-.icons,
-.headlines,
+.headline-container,
 footer {
   width: 960px;
 }
@@ -55,10 +57,14 @@ body,
   flex-direction: column;
 }
 
+header,
+h2 {
+  background-color: cadetblue;
+}
+
 /*Header*/
 
 header {
-  background-color: cadetblue;
   padding: 1rem 2rem;
   margin-top: 1rem;
   margin-bottom: 10rem;
@@ -120,14 +126,86 @@ h1 {
 
 /*Info Section*/
 
+.icons-container {
+  justify-content: center;
+  margin: 3rem 0;
+}
 
+.icons {
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  align-items: center;
+  height: 8rem;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.img img {
+  width: 3.5rem;
+  display: block;
+}
+
+.right .img img,
+.center .img img,
+.icon {
+  width: 5rem;
+}
+
+.img span {
+  flex-wrap: wrap;
+}
+
+.icon.center {
+  margin-left: 6rem;
+}
+
+.icon.right {
+  margin-left: 6rem;
+}
 
 /*Headline Section*/
 
+.headlines {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  justify-content: center;
+}
 
+.headline-container {
+  display: flex;
+  justify-content: center;
+}
+
+.headline {
+  margin-right: 5%;
+  width: 35%;
+  display: inline-flex;
+}
+
+.headline h2 {
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  color: white;
+}
 
 /*Footer*/
 
+footer {
+  padding: 4rem 4rem;
+  background-color: azure;
+}
 
+.logo-foot {
+  align-items: center;
+}
+
+.logo-foot img {
+  margin-right: 1rem;
+  height: 1.5rem;
+}
 
 /*Media Query*/
