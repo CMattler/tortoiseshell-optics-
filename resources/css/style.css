@@ -35,6 +35,7 @@ nav,
 .icon,
 .icon span,
 .headlines,
+.headline-container,
 .headline,
 footer,
 .logo-foot,
@@ -42,7 +43,15 @@ footer,
   display: flex;
 }
 
+.headline-container,
+.headlines,
+.icons,
+.icons-container {
+  justify-content: center;
+}
+
 header,
+.main-heading,
 .headline-container,
 footer {
   width: 960px;
@@ -70,7 +79,11 @@ header {
 }
 
 .logo,
-header {
+header,
+.logo-foot,
+.icon,
+.icons,
+.main {
   align-items: center;
 }
 
@@ -108,12 +121,10 @@ a {
   background-image: url("../imgs/glasses-bg.png");
   background-size: cover;
   background-position: center;
-  align-items: center;
 }
 
 .main-heading {
   margin-right: -2rem;
-  width: 960px;
   justify-content: flex-end;
 }
 
@@ -127,17 +138,10 @@ h1 {
 /*Info Section*/
 
 .icons-container {
-  justify-content: center;
   margin: 3rem 0;
 }
 
-.icons {
-  justify-content: center;
-  align-items: center;
-}
-
 .icon {
-  align-items: center;
   height: 8rem;
   text-align: center;
   justify-content: space-between;
@@ -154,10 +158,6 @@ h1 {
   width: 5rem;
 }
 
-.img span {
-  flex-wrap: wrap;
-}
-
 .icon.center {
   margin-left: 6rem;
 }
@@ -170,12 +170,6 @@ h1 {
 
 .headlines {
   margin-bottom: 5rem;
-  justify-content: center;
-}
-
-.headline-container {
-  display: flex;
-  justify-content: center;
 }
 
 .headline {
@@ -196,10 +190,6 @@ h1 {
 footer {
   padding: 4rem 4rem;
   background-color: azure;
-}
-
-.logo-foot {
-  align-items: center;
 }
 
 .logo-foot img {
